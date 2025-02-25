@@ -1,0 +1,59 @@
+.snake-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.score {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+canvas.darkmode {
+  border: 2px solid white;
+  background-color: black;
+}
+
+canvas {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.game-over,
+.congratulations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.game-over h2,
+.congratulations h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.game-over button,
+.congratulations button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.game-over button:hover,
+.congratulations button:hover {
+  background-color: #7b1fa2;
+}

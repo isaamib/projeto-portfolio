@@ -1,0 +1,77 @@
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #000;
+}
+
+.projects-title {
+  padding: 50px 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  filter: blur(5px);
+}
+
+.project-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  font-size: 16px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  color: #000;
+}
+
+.project-card:hover .project-details {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: rgb(131, 0, 202);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: rgb(65, 5, 98);
+}

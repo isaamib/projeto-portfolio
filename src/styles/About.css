@@ -1,0 +1,30 @@
+.about-section {
+  padding: 50px 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.highlight {
+  color: rgb(131, 0, 202);
+}
